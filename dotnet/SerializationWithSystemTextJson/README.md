@@ -1,0 +1,2 @@
+# SerializationWithSystemTextJson
+Sample code used in the followig blog post [Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET](https://www.erickmccollum.com/post/2020/03/01/Serialization-With-SystemTextJson.html)
