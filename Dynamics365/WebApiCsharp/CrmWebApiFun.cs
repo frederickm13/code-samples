@@ -13,7 +13,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace D365_Projects
 {
-    public class CrmWebApiFun
+    public class CrmWebApiFun : IDisposable
     {
         private static readonly AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com/common");
 
@@ -22,7 +22,7 @@ namespace D365_Projects
         private readonly Uri resourceApi;
         private readonly string clientId;
         private readonly Uri redirectUrl;
-        private readonly HttpClient request = new HttpClient();
+        private readonly HttpClient request;
 
 
         // Constructor - Instantiate and set necessary client values for Azure Active Directory
@@ -31,6 +31,7 @@ namespace D365_Projects
             this.resourceApi = new Uri(CrmApiUrl);
             this.clientId = AzureAdClientId;
             this.redirectUrl = new Uri(AzureAdRedirectUrl);
+            this.request = new HttpClient();
 
             // Remove API reference from CRM Web API URL to obtain the base resource URL
             this.resource = "https://" + resourceApi.Host + "/";
@@ -43,8 +44,8 @@ namespace D365_Projects
             request.BaseAddress = this.resourceApi;
         }
 
-        // Destructor to release the unmanaged HttpClient resource
-        ~CrmWebApiFun()
+        // Implement IDisposable.Dispose to release the unmanaged HttpClient resource
+        public void Dispose()
         {
             request.Dispose();
         }
