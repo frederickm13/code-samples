@@ -19,7 +19,7 @@ async function getDataAsync() {
         let data = getSomeData();
         return data;
     } catch (e) {
-        throw new Error(e);
+        throw e;
     }
 }
 
@@ -32,7 +32,7 @@ function getDataAndDoSomethingAsync() {
             doSomethingHere(data);
         })
         .catch((error) => {
-            throw new Error(error);
+            throw error;
         });
 }
 
@@ -44,6 +44,6 @@ async function getDataAndDoSomethingAsync() {
         let data = await getDataAsync();
         doSomethingHere(data);
     } catch (error) {
-        throw new Error(error);
+        throw error;
     }
 }
