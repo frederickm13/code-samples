@@ -30,6 +30,9 @@ function getDataAndDoSomethingAsync() {
     getDataAsync()
         .then((data) => {
             doSomethingHere(data);
+        })
+        .catch((error) => {
+            throw new Error(error);
         });
 }
 
@@ -37,6 +40,10 @@ function getDataAndDoSomethingAsync() {
 // Function call using `await` keyword
 
 async function getDataAndDoSomethingAsync() {
-    let data = await getDataAsync();
-    doSomethingHere(data);
+    try {
+        let data = await getDataAsync();
+        doSomethingHere(data);
+    } catch (error) {
+        throw new Error(error);
+    }
 }
