@@ -1,2 +1,2 @@
 # SerializationWithSystemTextJson
-Sample code used in the following blog post [Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET Core](https://www.erickmccollum.com/post/2020/03/01/Serialization-With-SystemTextJson.html)
+Sample code used in the following blog post [Comparing the Performance of System.Text.Json and Newtonsoft.Json in .NET Core](https://www.erickmccollum.com/2020/03/01/Serialization-With-SystemTextJson.html)

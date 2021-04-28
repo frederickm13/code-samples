@@ -1,2 +1,2 @@
 # EFCoreVsSqlDataReader
-Sample code used in the following blog post [Comparing the performance of Entity Framework Core and SqlDataReader in ASP.NET Core](https://www.erickmccollum.com/post/2021/04/27/compare-perf-efcore-sqldatareader.html)
+Sample code used in the following blog post [Comparing the performance of Entity Framework Core and SqlDataReader in ASP.NET Core](https://www.erickmccollum.com/2021/04/27/compare-perf-efcore-sqldatareader.html)
