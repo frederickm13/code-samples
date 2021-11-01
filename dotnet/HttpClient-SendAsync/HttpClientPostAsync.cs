@@ -6,7 +6,7 @@
 
     // Create Uri and POST body content.
     Uri requestUri = new Uri("https://example.com/api/");
-    StringContent content = new StringContent("{ \"firstName\": \"John\", \"lastName\": \"Doe\"}");
+    using StringContent content = new StringContent("{ \"firstName\": \"John\", \"lastName\": \"Doe\"}");
 
     // Create HttpClient instance and set OAuth header.
     using HttpClient client = new HttpClient();
