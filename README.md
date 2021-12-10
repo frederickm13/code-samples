@@ -1,14 +1,26 @@
 # code-samples
 Code samples for various languages and technologies
 
-### dotnet
+## Django
+Python sample code for Django web applications.
+
+## dotnet
 C# Sample code for .NET.
 
-### Dynamics365
+## Dynamics365
 Dynamics 365 sample code.
 
-### R
+## JavaScript
+JavaScript sample code.
+
+## Python
+Python sample code. Does not include Django web applications.
+
+## R
 Sample scripts written in R.
 
-### SQL
+## Rust
+Rust sample code.
+
+## SQL
 Sample scripts written in SQL.
