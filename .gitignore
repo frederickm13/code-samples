@@ -492,3 +492,6 @@ cython_debug/
 
 # Python venv configuration
 pyvenv.cfg
+
+# MacOS specific files
+.DS_Store
